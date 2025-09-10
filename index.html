@@ -6,13 +6,15 @@
     <title>봄정취</title>
     <style>
         body {margin:0;}
-        #layout {max-width: 1000px; border:1px solid green; margin:auto;}
+        #layout {max-width: 1000px; border:1px solid green; margin:auto; position: relative;}
         #layout img {width:100%; display: block;}
+        #layout img[alt="파란나비"] {position: absolute; width: 10%; right: 15%; top: 60%;}
     </style>
 </head>
 <body>
     <div id="layout">
-        <a href="summer.html"><img src="images/spring.jpg" alt="봄"></a>
+        <img src="images/spring.jpg" alt="봄">
+        <a href="index.html"><img src="images/blue_fly.png" alt="파란나비"></a>
     </div>
 </body>
 </html>
