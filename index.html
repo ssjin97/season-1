@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>봄정취</title>
+    <script>
+        function hide() {
+            //this.style.display='none';
+            document.getElementsByTagName('img') [1].style.display='none';
+        }
+    </script>
     <style>
         body {margin:0;}
         #layout {max-width: 1000px; border:1px solid green; margin:auto; position: relative;}
@@ -14,7 +20,7 @@
 <body>
     <div id="layout">
         <img src="images/spring.jpg" alt="봄">
-        <a href="index.html"><img src="images/blue_fly.png" alt="파란나비"></a>
+        <img src="images/blue_fly.png" alt="파란나비" onclick="this.style.display='none';">
     </div>
 </body>
 </html>
