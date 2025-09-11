@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>우울한 동동이</title>
-        <script>
-            function dong(i) {
-                document.getElementsByTagName('h1')[0].innerHTML=`우리가족은 $(i)명입니다`;
-                document.getElementsByTagName('h1')[0].style.textShadow='-2px -2px 5px orange';
-            }
-        </script>
-        <style>
-        body {margin: 0;}
-        main {max-width: 1000px; height: 100vh; margin: auto; border: 1px solid blue; background: skyblue url('images/load.jpg') no-repeat center center/ cover; position: relative; overflow: hidden;}
-        h1 {margin: 0; text-align: center; padding: 20px; text-shadow: 2px 2px 0 aqua;}
-        [alt="동동이"] {position: absolute; bottom: 0; width: 300px; animation: dong 5s  infinite linear;}
-        [alt="잔디"] {position: absolute; bottom: 0; width: 100%;}
-        @keyframes dong {
-            from {left: -300px;}
-            to {left: 100%;}
+    <title>봄정취</title>
+    <script>
+        function hide() {
+            document.getElementsByTagName('img')[1].style.display='none';
         }
+    </script>
+    <style>
+        body {margin:0;}
+        #layout {max-width: 1000px; border:1px solid green; margin:auto; position: relative;}
+        h1 {text-align: center; text-shadow: -3px -3px 0px orange;}
+        #layout img {width:100%; display: block;}
+        #layout img[alt="파란나비"] {position: absolute; width: 10%; right: 15%; top: 60%;}
     </style>
 </head>
 <body>
-    <main>
-        <h1 onclick="dong(3)">길을 걷고 있는 동동이</h1>
-        <a href="picnic.html"><img src="images/dongdong.png" alt="동동이"></a>
-        <img src="images/green.png" alt="잔디">
-    </main>
+    <div id="layout">
+        <h1>봄풍경</h1>
+        <img src="images/spring.jpg" alt="봄">
+        <img src="images/blue_fly.png" alt="파란나비" onclick="this.style.display='none';">
+    </div>
 </body>
 </html>
